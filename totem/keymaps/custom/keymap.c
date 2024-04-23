@@ -19,8 +19,8 @@ const uint16_t PROGMEM jk_combo[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM qw_combo[] = {KC_Q, KC_W, COMBO_END};
 
 combo_t key_combos[] = {
-  [AS] = COMBO(as_combo, LCTL(KC_ESC)),
-  [DF] = COMBO(df_combo, LCTL(KC_ESC)),
+  [AS] = COMBO(as_combo, LCTL_T(KC_ESC)),
+  [DF] = COMBO(df_combo, LCTL_T(KC_ESC)),
   [JK] = COMBO(jk_combo, KC_TAB),
   [QW] = COMBO(qw_combo, KC_TAB),
 };
@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [0] = LAYOUT(
              KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,      KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,  
-             KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,     KC_J,     KC_L,     KC_ENT,    
+             KC_A,     KC_S,     KC_D,     KC_F,     KC_G,      KC_H,     KC_J,     KC_K,     KC_L,     KC_ENT,
    _______,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,      KC_N,     KC_M,     KC_COMM,  KC_DOT,   SLSHLY3,  KC_BSPC,
                                  KC_LGUI,  KC_LALT,  SPC_SFT,   SPC_LY1,  MO(2),    _______
   ),
